@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  opacity: 0.7;
+}
+
+#bgPicPa {
+  position: absolute;
+}
+
+#bgPicCr {
+  position: absolute;
+  top: 1200px;
+}
+
+#bgPicBa {
+  position: absolute;
+  top: 2263px;
+}
+
+#content {
+  margin: 20px auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#content div {
+  overflow: auto;
+}
+#content div h3 {
+  margin-top: 7px;
+  font-family: Pattaya;
+}
+#content div p {
+  display: flex;
+  font-family: Roboto;
+}
+
+#sponsors {
+  margin: 20px auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#sponsors #sponsIMG {
+  display: block;
+  background: #fff;
+}
+#sponsors #sponsIMG img {
+  width: 280px;
+}
+#sponsors div {
+  margin: 5px auto;
+  display: none;
+}
+
+h2 {
+  font-family: Henny Penny;
+  margin-bottom: 40px;
+}
+
+#box1 {
+  width: 400px;
+  height: 400px;
+  background-color: #9453a6;
+  border: #000 2px solid;
+  margin: 30px 30px;
+  display: inline-block;
+}
+
+#box2 {
+  width: 400px;
+  height: 400px;
+  background-color: #F2CC0F;
+  border: #000 2px solid;
+  margin: 30px 30px;
+  display: inline-block;
+}
+
+#box3 {
+  width: 400px;
+  height: 400px;
+  background-color: #8CBF3F;
+  border: #000 2px solid;
+  margin: 30px 30px;
+  display: inline-block;
+}
+
+#box4 {
+  width: 400px;
+  height: 400px;
+  background-color: #8CBF3F;
+  border: #000 2px solid;
+  margin: 30px 30px;
+  display: inline-block;
+}
+
+#box5 {
+  width: 400px;
+  height: 400px;
+  background-color: #9453a6;
+  border: #000 2px solid;
+  margin: 30px 30px;
+  display: inline-block;
+}
+
+.main {
+  width: 75vw;
+  background-color: rgb(247, 247, 204);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 35vw;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 0;
+  width: 100vw;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+nav div {
+  background-color: #9453a6;
+}
+nav div div {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav div div ul li {
+  padding: 5px 60px;
+  margin: 0 37px;
+  border-radius: 12px;
+}
+nav div div ul li:nth-child(2n) {
+  background-color: #8CBF3F;
+  font-family: Henny Penny;
+}
+nav div div ul li:nth-child(2n):active {
+  background-color: #a3cc65;
+}
+nav div div ul li:nth-child(2n+1) {
+  background-color: #F2CC0F;
+  font-family: Henny Penny;
+}
+nav div div ul li:nth-child(2n+1):active {
+  background-color: #c3a40b;
+}/*# sourceMappingURL=main.css.map */

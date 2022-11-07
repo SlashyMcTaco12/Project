@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+    opacity: 0.7;
+}
+
+#bgPicPa {
+    position: absolute;
+}
+
+#bgPicCr {
+    position: absolute;
+    top: 1200px;
+}
+
+#bgPicBa {
+    position: absolute;
+    top: 2263px;
+}
+
+#content {
+    margin: 20px auto;
+    text-align: center;
+    justify-content: space-evenly;
+
+    div {
+        overflow: auto;
+
+        h3 {
+            margin-top: 7px;
+            font-family: $fontHeaderA;
+        }
+
+        p {
+            display: flex;
+            font-family: $fontText;
+        }
+    }
+
+}
+
+#sponsors {
+    margin: 20px auto;
+    text-align: center;
+    justify-content: space-evenly;
+
+    #sponsIMG {
+        display: block;
+        background: #fff;
+
+        img {
+            width: 280px;
+        }
+    }
+
+    div {
+        margin: 5px auto;
+        display: none;
+    }
+}
+
+h2 {
+    font-family: $fontHeaderB;
+    margin-bottom: 40px;
+}
+
+#box1 {
+    width: 400px;
+    height: 400px;
+    background-color: $buttonPurple;
+    border: #000 2px solid;
+    margin: 30px 30px;
+    display: inline-block;
+}
+
+#box2 {
+    width: 400px;
+    height: 400px;
+    background-color: $buttonYellow;
+    border: #000 2px solid;
+    margin: 30px 30px;
+    display: inline-block;
+}
+
+#box3 {
+    width: 400px;
+    height: 400px;
+    background-color: $buttonGreen;
+    border: #000 2px solid;
+    margin: 30px 30px;
+    display: inline-block;
+}
+
+#box4 {
+    width: 400px;
+    height: 400px;
+    background-color: $buttonGreen;
+    border: #000 2px solid;
+    margin: 30px 30px;
+    display: inline-block;
+}
+
+#box5 {
+    width: 400px;
+    height: 400px;
+    background-color: $buttonPurple;
+    border: #000 2px solid;
+    margin: 30px 30px;
+    display: inline-block;
+}
+
+.main {
+    width: 75vw;
+    background-color: rgb(247, 247, 204);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.carousel {
+    width: 35vw;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding: 0;
+    width: 100vw;
+}
+
+nav {
+    font-size: 1.5rem;
+
+    div {
+        background-color: $buttonPurple;
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+
+            ul {
+                li {
+                    padding: 5px 60px;
+                    margin: 0 37px;
+                    border-radius: 12px;
+
+                    &:nth-child(2n) {
+                        background-color: $buttonGreen;
+                        font-family: $fontHeaderB;
+
+                        &:active {
+                            background-color: lighten($buttonGreen, 10%);
+                        }
+                    }
+
+                    &:nth-child(2n+1) {
+                        background-color: $buttonYellow;
+                        font-family: $fontHeaderB;
+
+                        &:active {
+                            background-color: darken($buttonYellow, 10%);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
