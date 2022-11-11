@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: #000;
+  background-image: url("/images/seemlessBGC.jpg");
+  background-repeat: repeat;
+  overflow: none;
 }
 
 #logo {
@@ -14,24 +16,11 @@ body {
   opacity: 0.7;
 }
 
-#bgPicPa {
-  position: absolute;
-}
-
-#bgPicCr {
-  position: absolute;
-  top: 1200px;
-}
-
-#bgPicBa {
-  position: absolute;
-  top: 2263px;
-}
-
 #content {
   margin: 20px auto;
+  margin-bottom: 0;
   text-align: center;
-  justify-content: space-evenly;
+  display: block;
 }
 #content div {
   overflow: auto;
@@ -46,20 +35,16 @@ body {
 }
 
 #sponsors {
-  margin: 20px auto;
+  margin: 0 auto;
   text-align: center;
   justify-content: space-evenly;
 }
-#sponsors #sponsIMG {
-  display: block;
-  background: #fff;
-}
-#sponsors #sponsIMG img {
+#sponsors img {
   width: 280px;
 }
-#sponsors div {
-  margin: 5px auto;
-  display: none;
+
+div {
+  margin: 0px auto;
 }
 
 h2 {
@@ -67,55 +52,24 @@ h2 {
   margin-bottom: 40px;
 }
 
-#box1 {
+.box {
   width: 400px;
   height: 400px;
-  background-color: #9453a6;
+  background-color: #8CBF3F;
   border: #000 2px solid;
   margin: 30px 30px;
   display: inline-block;
 }
-
-#box2 {
-  width: 400px;
-  height: 400px;
+.box:nth-child(3n+1) {
+  background-color: #9453a6;
+}
+.box:nth-child(3n+2) {
   background-color: #F2CC0F;
-  border: #000 2px solid;
-  margin: 30px 30px;
-  display: inline-block;
-}
-
-#box3 {
-  width: 400px;
-  height: 400px;
-  background-color: #8CBF3F;
-  border: #000 2px solid;
-  margin: 30px 30px;
-  display: inline-block;
-}
-
-#box4 {
-  width: 400px;
-  height: 400px;
-  background-color: #8CBF3F;
-  border: #000 2px solid;
-  margin: 30px 30px;
-  display: inline-block;
-}
-
-#box5 {
-  width: 400px;
-  height: 400px;
-  background-color: #9453a6;
-  border: #000 2px solid;
-  margin: 30px 30px;
-  display: inline-block;
 }
 
 .main {
   width: 75vw;
   background-color: rgb(247, 247, 204);
-  position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -126,9 +80,30 @@ h2 {
   margin: 0 auto;
 }
 
+.container-fluid,
 .navbar {
   padding: 0;
-  width: 100vw;
+  margin: 0;
+}
+
+.card {
+  width: 20vw;
+  height: 40vh;
+  overflow: auto;
+}
+.card img {
+  width: 40vw;
+}
+
+footer {
+  background-color: #9453a6;
+  width: 75vw;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer h5 {
+  line-height: 2.7;
 }
 
 nav {
