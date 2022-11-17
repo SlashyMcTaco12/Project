@@ -1,3 +1,4 @@
+/*ALL PAGES CONTENT START*/
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +11,108 @@ body {
   overflow: none;
 }
 
-#logo {
+div {
+  margin: 0px auto;
+}
+
+/*Main content box START*/
+.main {
+  width: 75vw;
+  background-color: rgb(247, 247, 204);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.main h2 {
+  font-family: Henny Penny;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/*Main content box END*/
+/*Footer START*/
+footer {
+  background-color: #9453a6;
+  width: 75vw;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer h5 {
+  line-height: 2.7;
+}
+@media (max-width: 768px) {
+  footer h5 {
+    font-size: 1em;
+  }
+}
+
+/*Footer END*/
+/*Navbar related style START*/
+.container-fluid,
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+nav #logo {
   width: 120px;
   height: 120px;
   opacity: 0.7;
+}
+nav div {
+  background-color: #9453a6;
+}
+nav div div {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav div div ul li {
+  padding: 5px 0;
+  margin: 0 37px;
+  border-radius: 12px;
+  width: 10vw;
+  text-align: center;
+}
+nav div div ul li:nth-child(2n) {
+  background-color: #8CBF3F;
+  font-family: Henny Penny;
+}
+nav div div ul li:nth-child(2n):active {
+  background-color: #a3cc65;
+}
+nav div div ul li:nth-child(2n+1) {
+  background-color: #F2CC0F;
+  font-family: Henny Penny;
+}
+nav div div ul li:nth-child(2n+1):active {
+  background-color: #c3a40b;
+}
+
+/*Navbar related style END*/
+/*ALL PAGES CONTENT END*/
+/*----------------------------------*/
+/*PAGE SPECIFIC ELEMENTS START*/
+/*Landing site specific elements START*/
+.carousel {
+  width: 35vw;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .carousel {
+    width: 50vw;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    width: 60vw;
+  }
 }
 
 #content {
@@ -21,6 +120,35 @@ body {
   margin-bottom: 0;
   text-align: center;
   display: block;
+}
+#content .box {
+  width: 21vw;
+  height: 40vh;
+  background-color: #8CBF3F;
+  border: #000 2px solid;
+  margin: 30px 30px;
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  #content .box {
+    width: 35vw;
+  }
+}
+@media (max-width: 991px) {
+  #content .box {
+    width: 42vw;
+  }
+}
+@media (max-width: 768px) {
+  #content .box {
+    width: 50vw;
+  }
+}
+#content .box:nth-child(3n+1) {
+  background-color: #9453a6;
+}
+#content .box:nth-child(3n+2) {
+  background-color: #F2CC0F;
 }
 #content div {
   overflow: auto;
@@ -39,99 +167,243 @@ body {
   text-align: center;
   justify-content: space-evenly;
 }
-#sponsors img {
-  width: 280px;
-}
-
-div {
-  margin: 0px auto;
-}
-
-h2 {
-  font-family: Henny Penny;
-  margin-bottom: 40px;
-}
-
-.box {
-  width: 400px;
-  height: 400px;
-  background-color: #8CBF3F;
-  border: #000 2px solid;
-  margin: 30px 30px;
-  display: inline-block;
-}
-.box:nth-child(3n+1) {
-  background-color: #9453a6;
-}
-.box:nth-child(3n+2) {
-  background-color: #F2CC0F;
-}
-
-.main {
-  width: 75vw;
-  background-color: rgb(247, 247, 204);
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.carousel {
-  width: 35vw;
-  margin: 0 auto;
-}
-
-.container-fluid,
-.navbar {
-  padding: 0;
-  margin: 0;
-}
-
-.card {
+#sponsors .card {
   width: 20vw;
   height: 40vh;
   overflow: auto;
 }
-.card img {
+#sponsors .card img {
   width: 40vw;
 }
-
-footer {
-  background-color: #9453a6;
-  width: 75vw;
-  height: 60px;
-  margin: 0 auto;
-  text-align: center;
-}
-footer h5 {
-  line-height: 2.7;
+@media (max-width: 1200px) {
+  #sponsors .card {
+    width: 30vw;
+  }
 }
 
-nav {
-  font-size: 1.5rem;
-}
-nav div {
-  background-color: #9453a6;
-}
-nav div div {
-  display: flex;
-  justify-content: space-evenly;
-}
-nav div div ul li {
-  padding: 5px 60px;
-  margin: 0 37px;
-  border-radius: 12px;
-}
-nav div div ul li:nth-child(2n) {
+/*Landing site specific elements END*/
+/*----------------------------------*/
+/*About page specific elements START*/
+#aboutFEST {
   background-color: #8CBF3F;
-  font-family: Henny Penny;
 }
-nav div div ul li:nth-child(2n):active {
-  background-color: #a3cc65;
+#aboutFEST .card {
+  background-color: #c5df9e;
 }
-nav div div ul li:nth-child(2n+1) {
+
+#aboutMAYOR {
   background-color: #F2CC0F;
-  font-family: Henny Penny;
 }
-nav div div ul li:nth-child(2n+1):active {
-  background-color: #c3a40b;
-}/*# sourceMappingURL=main.css.map */
+#aboutMAYOR .card {
+  background-color: #f9e688;
+}
+
+.about {
+  border: 1px black solid;
+  width: 60vw;
+  padding-left: 5px;
+  text-align: center;
+  display: block;
+  margin: 40px auto 0;
+}
+.about h1 {
+  margin: 10px auto 20px;
+}
+.about h3 {
+  margin-bottom: 20px;
+}
+.about div {
+  margin-bottom: 30px;
+  display: flex;
+}
+.about div .text {
+  margin: 5px 35px 0px 5px;
+  width: 70vw;
+  text-align: left;
+}
+.about div .card {
+  width: 30vw;
+  overflow: auto;
+  height: 40vh;
+}
+@media (max-width: 991px) {
+  .about div {
+    display: block;
+  }
+  .about div .text {
+    width: 50vw;
+  }
+}
+
+/*About page specific elements END*/
+/*Media page specific elements START*/
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+@media (max-width: 991px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.smallIMG {
+  width: 16vw;
+}
+@media (max-width: 991px) {
+  .smallIMG {
+    width: 50vw;
+  }
+}
+
+.colSM {
+  height: 170px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .colSM {
+    height: 220px;
+  }
+}
+
+.row {
+  text-align: center;
+  padding-top: 40px;
+}
+
+iframe {
+  width: 50vw;
+  height: 60vh;
+}
+@media (max-width: 991px) {
+  iframe {
+    width: 74vw;
+    height: 40vh;
+  }
+}
+
+/*Media page specific elements END*//*# sourceMappingURL=main.css.map */

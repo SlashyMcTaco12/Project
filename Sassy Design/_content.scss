@@ -1,3 +1,4 @@
+/*ALL PAGES CONTENT START*/
 * {
     margin: 0;
     padding: 0;
@@ -10,100 +11,31 @@ body {
     overflow: none;
 }
 
-#logo {
-    width: 120px;
-    height: 120px;
-    opacity: 0.7;
-}
-
-#content {
-    margin: 20px auto;
-    margin-bottom: 0;
-    text-align: center;
-    display: block;
-
-    div {
-        overflow: auto;
-
-        h3 {
-            margin-top: 7px;
-            font-family: $fontHeaderA;
-        }
-
-        p {
-            display: flex;
-            font-family: $fontText;
-        }
-    }
-
-}
-
-#sponsors {
-    margin: 0 auto;
-    text-align: center;
-    justify-content: space-evenly;
-
-    img {
-        width: 280px;
-    }
-}
-
 div {
     margin: 0px auto;
 }
 
-h2 {
-    font-family: $fontHeaderB;
-    margin-bottom: 40px;
-}
-
-.box {
-    width: 400px;
-    height: 400px;
-    background-color: $buttonGreen;
-    border: #000 2px solid;
-    margin: 30px 30px;
-    display: inline-block;
-
-    &:nth-child(3n+1) {
-        background-color: $buttonPurple;
-    }
-
-    &:nth-child(3n+2) {
-        background-color: $buttonYellow;
-    }
-}
-
-
+/*Main content box START*/
 .main {
     width: 75vw;
     background-color: rgb(247, 247, 204);
     left: 0;
     right: 0;
     margin: 0 auto;
-}
+    padding-bottom: 20px;
+    text-align: center;
 
-.carousel {
-    width: 35vw;
-    margin: 0 auto;
-}
-
-.container-fluid,
-.navbar {
-    padding: 0;
-    margin: 0;
-}
-
-.card {
-    width: 20vw;
-    height: 40vh;
-    overflow: auto;
-
-    img {
-        width: 40vw;
+    h2 {
+        font-family: $fontHeaderB;
+        margin-bottom: 40px;
+        padding-top: 10px;
+        text-align: center;
     }
 }
 
+/*Main content box END*/
+
+/*Footer START*/
 footer {
     background-color: $buttonPurple;
     width: 75vw;
@@ -113,11 +45,30 @@ footer {
 
     h5 {
         line-height: 2.7;
+
+        @include mobile {
+            font-size: 1em;
+        }
     }
+}
+
+/*Footer END*/
+
+/*Navbar related style START*/
+.container-fluid,
+.navbar {
+    padding: 0;
+    margin: 0;
 }
 
 nav {
     font-size: 1.5rem;
+
+    #logo {
+        width: 120px;
+        height: 120px;
+        opacity: 0.7;
+    }
 
     div {
         background-color: $buttonPurple;
@@ -128,9 +79,11 @@ nav {
 
             ul {
                 li {
-                    padding: 5px 60px;
+                    padding: 5px 0;
                     margin: 0 37px;
                     border-radius: 12px;
+                    width: 10vw;
+                    text-align: center;
 
                     &:nth-child(2n) {
                         background-color: $buttonGreen;
@@ -149,9 +102,333 @@ nav {
                             background-color: darken($buttonYellow, 10%);
                         }
                     }
-
                 }
             }
         }
     }
 }
+
+/*Navbar related style END*/
+
+/*ALL PAGES CONTENT END*/
+
+/*----------------------------------*/
+
+/*PAGE SPECIFIC ELEMENTS START*/
+
+/*Landing site specific elements START*/
+.carousel {
+    width: 35vw;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 50vw;
+    }
+
+    @include mobile {
+        width: 60vw;
+    }
+}
+
+#content {
+    margin: 20px auto;
+    margin-bottom: 0;
+    text-align: center;
+    display: block;
+
+    .box {
+        width: 21vw;
+        height: 40vh;
+        background-color: $buttonGreen;
+        border: #000 2px solid;
+        margin: 30px 30px;
+        display: inline-block;
+
+        @include desktop {
+            width: 35vw;
+        }
+
+        @include tablet {
+            width: 42vw;
+        }
+
+        @include mobile {
+            width: 50vw;
+        }
+
+        &:nth-child(3n+1) {
+            background-color: $buttonPurple;
+        }
+
+        &:nth-child(3n+2) {
+            background-color: $buttonYellow;
+        }
+    }
+
+    div {
+        overflow: auto;
+
+        h3 {
+            margin-top: 7px;
+            font-family: $fontHeaderA;
+        }
+
+        p {
+            display: flex;
+            font-family: $fontText;
+        }
+    }
+}
+
+#sponsors {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-evenly;
+
+    .card {
+        width: 20vw;
+        height: 40vh;
+        overflow: auto;
+
+        img {
+            width: 40vw;
+        }
+
+        @include desktop {
+            width: 30vw;
+        }
+    }
+}
+
+/*Landing site specific elements END*/
+
+/*----------------------------------*/
+
+/*About page specific elements START*/
+
+#aboutFEST {
+    background-color: $buttonGreen;
+
+    .card {
+        background-color: lighten($buttonGreen, 25%);
+    }
+}
+
+#aboutMAYOR {
+    background-color: $buttonYellow;
+
+    .card {
+        background-color: lighten($buttonYellow, 25%);
+    }
+}
+
+.about {
+    border: 1px black solid;
+    width: 60vw;
+    padding-left: 5px;
+    text-align: center;
+    display: block;
+    margin: 40px auto 0;
+
+    h1 {
+        margin: 10px auto 20px;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    div {
+        margin-bottom: 30px;
+        display: flex;
+
+        .text {
+            margin: 5px 35px 0px 5px;
+            width: 70vw;
+            text-align: left;
+        }
+
+        .card {
+            width: 30vw;
+            overflow: auto;
+            height: 40vh;
+        }
+
+        @include tablet {
+            display: block;
+
+            .text {
+                width: 50vw;
+            }
+        }
+    }
+}
+
+/*About page specific elements END*/
+
+/*Media page specific elements START*/
+
+.row>.column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+
+    @include tablet {
+        width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.smallIMG {
+    width: 16vw;
+
+    @include tablet {
+        width: 50vw;
+    }
+}
+
+.colSM {
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    @include tablet {
+        height: 220px;
+    }
+}
+
+.row {
+    text-align: center;
+    padding-top: 40px;
+}
+
+iframe {
+    width: 50vw;
+    height: 60vh;
+
+    @include tablet {
+        width: 74vw;
+        height: 40vh;
+    }
+}
+
+/*Media page specific elements END*/
