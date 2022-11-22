@@ -257,6 +257,10 @@ nav {
         @include tablet {
             display: block;
 
+            .card {
+                height: 25vh;
+            }
+
             .text {
                 width: 50vw;
             }
@@ -432,3 +436,175 @@ iframe {
 }
 
 /*Media page specific elements END*/
+
+/*FAQ page specific elements START*/
+
+.accordion {
+    padding: 20px 0;
+    width: 67vw;
+
+    .accordion-item {
+
+        .accordion-button {
+            background-color: $buttonGreen;
+            height: 9vh;
+        }
+
+        .accordion-body {
+            background-color: lighten($buttonGreen, 20%);
+        }
+
+        &:nth-child(3n + 1) {
+            .accordion-button {
+                background-color: $buttonPurple;
+            }
+
+            .accordion-body {
+                background-color: lighten($buttonPurple, 20%);
+            }
+        }
+
+        &:nth-child(3n + 2) {
+            .accordion-body {
+                background-color: lighten($buttonYellow, 20%);
+            }
+
+            .accordion-button {
+                background-color: $buttonYellow;
+            }
+        }
+    }
+}
+
+/*FAQ page specific elements END */
+
+/*Contact page specific elements START */
+
+.contact {
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    #frame {
+        border: 10px $buttonPurple double;
+        border-radius: 5px;
+        background-color: $buttonGreen;
+
+        p {
+            padding: 4px;
+        }
+
+        iframe {
+            width: 24vw;
+            height: 40vh;
+        }
+    }
+
+    #contactForm {
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+
+            input {
+                background-color: lighten(rgb(247, 247, 204), 5%);
+                box-shadow: 0px 4px darken(rgb(247, 247, 204), 12%);
+            }
+
+            #firstName {
+                border: 0;
+                border-bottom: $buttonPurple 4px solid;
+                border-radius: 5px;
+                width: 14vw;
+                height: 4vh;
+                margin-right: 10px;
+            }
+
+            #lastName {
+                border: 0;
+                border-bottom: $buttonYellow 4px solid;
+                border-radius: 5px;
+                width: 14vw;
+                margin-right: 10px;
+            }
+
+            #email {
+                border: 0;
+                border-bottom: $buttonGreen 4px solid;
+                border-radius: 5px;
+                width: 14vw;
+            }
+
+            #freeText {
+                margin-top: 40px;
+                width: 40vw;
+                height: 25vh;
+                padding: 8px;
+                background-color: lighten(rgb(247, 247, 204), 5%);
+                box-shadow: 0px 4px darken(rgb(247, 247, 204), 12%);
+            }
+
+            button {
+                margin: 40px 0;
+                width: 14vw;
+                height: 5vh;
+                background-color: rgb(185, 7, 7);
+                color: white;
+                border: 0;
+                border-radius: 8px;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    @include desktop {
+        display: block;
+
+        #contactForm {
+            div {
+                #firstName {
+                    height: 5vh;
+                    width: 20vw;
+                }
+
+                #lastName {
+                    width: 20vw;
+                }
+
+                #email {
+                    width: 20vw;
+                }
+
+                #freeText {
+                    margin-top: 40px;
+                    width: 40vw;
+                    height: 25vh;
+                }
+            }
+        }
+
+        #frame {
+            iframe {
+                width: 45vw;
+            }
+        }
+    }
+
+    @include mobile {
+        #contactForm {
+
+            div {
+                #freeText {
+                    width: 60vw;
+                }
+            }
+        }
+
+        #frame {
+            iframe {
+                width: 68vw;
+            }
+        }
+    }
+}

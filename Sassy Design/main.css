@@ -230,6 +230,9 @@ nav div div ul li:nth-child(2n+1):active {
   .about div {
     display: block;
   }
+  .about div .card {
+    height: 25vh;
+  }
   .about div .text {
     width: 50vw;
   }
@@ -406,4 +409,127 @@ iframe {
   }
 }
 
-/*Media page specific elements END*//*# sourceMappingURL=main.css.map */
+/*Media page specific elements END*/
+/*FAQ page specific elements START*/
+.accordion {
+  padding: 20px 0;
+  width: 67vw;
+}
+.accordion .accordion-item .accordion-button {
+  background-color: #8CBF3F;
+  height: 9vh;
+}
+.accordion .accordion-item .accordion-body {
+  background-color: #bad98b;
+}
+.accordion .accordion-item:nth-child(3n+1) .accordion-button {
+  background-color: #9453a6;
+}
+.accordion .accordion-item:nth-child(3n+1) .accordion-body {
+  background-color: #bf95ca;
+}
+.accordion .accordion-item:nth-child(3n+2) .accordion-body {
+  background-color: #f7e170;
+}
+.accordion .accordion-item:nth-child(3n+2) .accordion-button {
+  background-color: #F2CC0F;
+}
+
+/*FAQ page specific elements END */
+/*Contact page specific elements START */
+.contact {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact #frame {
+  border: 10px #9453a6 double;
+  border-radius: 5px;
+  background-color: #8CBF3F;
+}
+.contact #frame p {
+  padding: 4px;
+}
+.contact #frame iframe {
+  width: 24vw;
+  height: 40vh;
+}
+.contact #contactForm div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact #contactForm div input {
+  background-color: #fafae2;
+  box-shadow: 0px 4px #efef97;
+}
+.contact #contactForm div #firstName {
+  border: 0;
+  border-bottom: #9453a6 4px solid;
+  border-radius: 5px;
+  width: 14vw;
+  height: 4vh;
+  margin-right: 10px;
+}
+.contact #contactForm div #lastName {
+  border: 0;
+  border-bottom: #F2CC0F 4px solid;
+  border-radius: 5px;
+  width: 14vw;
+  margin-right: 10px;
+}
+.contact #contactForm div #email {
+  border: 0;
+  border-bottom: #8CBF3F 4px solid;
+  border-radius: 5px;
+  width: 14vw;
+}
+.contact #contactForm div #freeText {
+  margin-top: 40px;
+  width: 40vw;
+  height: 25vh;
+  padding: 8px;
+  background-color: #fafae2;
+  box-shadow: 0px 4px #efef97;
+}
+.contact #contactForm div button {
+  margin: 40px 0;
+  width: 14vw;
+  height: 5vh;
+  background-color: rgb(185, 7, 7);
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.5em;
+}
+@media (max-width: 1200px) {
+  .contact {
+    display: block;
+  }
+  .contact #contactForm div #firstName {
+    height: 5vh;
+    width: 20vw;
+  }
+  .contact #contactForm div #lastName {
+    width: 20vw;
+  }
+  .contact #contactForm div #email {
+    width: 20vw;
+  }
+  .contact #contactForm div #freeText {
+    margin-top: 40px;
+    width: 40vw;
+    height: 25vh;
+  }
+  .contact #frame iframe {
+    width: 45vw;
+  }
+}
+@media (max-width: 768px) {
+  .contact #contactForm div #freeText {
+    width: 60vw;
+  }
+  .contact #frame iframe {
+    width: 68vw;
+  }
+}/*# sourceMappingURL=main.css.map */
