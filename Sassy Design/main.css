@@ -18,12 +18,13 @@ div {
 /*Main content box START*/
 .main {
   width: 75vw;
-  background-color: rgb(247, 247, 204);
+  background-color: beige;
   left: 0;
   right: 0;
   margin: 0 auto;
   padding-bottom: 20px;
   text-align: center;
+  padding-top: 20px;
 }
 .main h2 {
   font-family: Henny Penny;
@@ -35,7 +36,8 @@ div {
 /*Main content box END*/
 /*Footer START*/
 footer {
-  background-color: #9453a6;
+  color: white;
+  background-color: black;
   width: 75vw;
   height: 60px;
   margin: 0 auto;
@@ -48,6 +50,15 @@ footer h5 {
   footer h5 {
     font-size: 1em;
   }
+}
+footer #quizBTN {
+  background-color: #9453a6;
+  border-radius: 5px;
+  color: white;
+}
+footer #quizBTN #quizANC {
+  text-decoration: none;
+  color: white;
 }
 
 /*Footer END*/
@@ -79,20 +90,30 @@ nav div div ul li {
   border-radius: 12px;
   width: 10vw;
   text-align: center;
+  font-family: Henny Penny;
 }
 nav div div ul li:nth-child(2n) {
   background-color: #8CBF3F;
-  font-family: Henny Penny;
+  border-bottom: 4px solid #bad98b;
 }
 nav div div ul li:nth-child(2n):active {
-  background-color: #a3cc65;
+  background-color: #709932;
 }
 nav div div ul li:nth-child(2n+1) {
   background-color: #F2CC0F;
-  font-family: Henny Penny;
+  border-bottom: 4px solid #f7e170;
 }
 nav div div ul li:nth-child(2n+1):active {
   background-color: #c3a40b;
+}
+@media (max-width: 991px) {
+  nav div div {
+    display: block;
+  }
+  nav div div ul li {
+    width: 97vw;
+    margin: 7px 5px;
+  }
 }
 
 /*Navbar related style END*/
@@ -103,6 +124,9 @@ nav div div ul li:nth-child(2n+1):active {
 .carousel {
   width: 35vw;
   margin: 0 auto;
+}
+.carousel .carousel-inner .carousel-item {
+  height: 85vh;
 }
 @media (max-width: 991px) {
   .carousel {
@@ -115,6 +139,21 @@ nav div div ul li:nth-child(2n+1):active {
   }
 }
 
+#respIMG {
+  margin: 0 auto;
+  padding-top: 3px;
+  display: none;
+  width: 74.5vw;
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    display: none;
+  }
+  #respIMG {
+    display: block;
+  }
+}
 #content {
   margin: 20px auto;
   margin-bottom: 0;
@@ -435,8 +474,8 @@ iframe {
   background-color: #F2CC0F;
 }
 
-/*FAQ page specific elements END */
-/*Contact page specific elements START */
+/*FAQ page specific elements END*/
+/*Contact page specific elements START*/
 .contact {
   padding-top: 20px;
   padding-left: 20px;
@@ -461,28 +500,30 @@ iframe {
 }
 .contact #contactForm div input {
   background-color: #fafae2;
-  box-shadow: 0px 4px #efef97;
 }
-.contact #contactForm div #firstName {
+.contact #contactForm div #first {
   border: 0;
   border-bottom: #9453a6 4px solid;
   border-radius: 5px;
   width: 14vw;
   height: 4vh;
   margin-right: 10px;
+  padding-left: 4px;
 }
-.contact #contactForm div #lastName {
+.contact #contactForm div #last {
   border: 0;
   border-bottom: #F2CC0F 4px solid;
   border-radius: 5px;
   width: 14vw;
   margin-right: 10px;
+  padding-left: 4px;
 }
 .contact #contactForm div #email {
   border: 0;
   border-bottom: #8CBF3F 4px solid;
   border-radius: 5px;
   width: 14vw;
+  padding-left: 4px;
 }
 .contact #contactForm div #freeText {
   margin-top: 40px;
@@ -490,13 +531,12 @@ iframe {
   height: 25vh;
   padding: 8px;
   background-color: #fafae2;
-  box-shadow: 0px 4px #efef97;
 }
 .contact #contactForm div button {
   margin: 40px 0;
   width: 14vw;
   height: 5vh;
-  background-color: rgb(185, 7, 7);
+  background-color: #b90707;
   color: white;
   border: 0;
   border-radius: 8px;
@@ -532,4 +572,26 @@ iframe {
   .contact #frame iframe {
     width: 68vw;
   }
+}
+
+/* Quiz page specific elements START*/
+#quiz {
+  width: 70vw;
+  margin-top: 20px;
+  background-color: #9453a6;
+  border: 5px double #F2CC0F;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#quiz .quiz-item {
+  background-color: #F2CC0F;
+  width: 26vw;
+  margin: 25px auto;
+  border: 1px #8CBF3F solid;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+}
+#quiz .quiz-item div {
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */

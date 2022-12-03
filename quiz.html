@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardi Gras QUIZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="Sassy Design/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Henny+Penny">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="landingSite.html"><img src="Images/MaGrLOGO.png" alt="MARDI GRAS"
+                    id="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="landingSite.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div id="quiz">
+            <div class="quiz-item">
+                <h3>In what year was the first Mardi Gras?</h3>
+                <div>
+                    <input type="radio" name="q1" value="false" onchange="checkAnswer(false)" id="f11"></input>
+                    <label for="f11">1899</label>
+                </div>
+                <div>
+                    <input type="radio" name="q1" value="true" onchange="checkAnswer(true)" id="t1"></input>
+                    <label for="t1">1857</label>
+                </div>
+                <div>
+                    <input type="radio" name="q1" value="false" onchange="checkAnswer(false)" id="f12"></input>
+                    <label for="f12">1657</label>
+                </div>
+                <div>
+                    <input type="radio" name="q1" value="false" onchange="checkAnswer(false)" id="f13"></input>
+                    <label for="f13">1905</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <h3>What are the 3 colors symbolic of the Mardi Gras?</h3>
+                <div>
+                    <input type="radio" name="q2" value="false" onchange="checkAnswer(false)" id="f21"></input>
+                    <label for="f21">Red, Blue, Yellow</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" value="false" onchange="checkAnswer(false)" id="f22"></input>
+                    <label for="f22">Yellow, Grey, Green</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" value="true" onchange="checkAnswer(true)" id="t2"></input>
+                    <label for="t1">Purple, Green, Yellow</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" value="false" onchange="checkAnswer(false)" id="f23"></input>
+                    <label for="f23">Black, Brown, Pink</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <h3>What is an accessory iconic to the Mardi Gras?</h3>
+                <div>
+                    <input type="radio" name="q3" value="true" onchange="checkAnswer(true)" id="t3"></input>
+                    <label for="t3">A mask</label>
+                </div>
+                <div>
+                    <input type="radio" name="q3" value="false" onchange="checkAnswer(false)" id="f31"></input>
+                    <label for="f31">A tophat</label>
+                </div>
+                <div>
+                    <input type="radio" name="q3" value="false" onchange="checkAnswer(false)" id="f32"></input>
+                    <label for="f32">Clown boots</label>
+                </div>
+                <div>
+                    <input type="radio" name="q3" value="false" onchange="checkAnswer(false)" id="f33"></input>
+                    <label for="f33">A walking cane</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <h3>Where is the Mardi Gras festival held in the US?</h3>
+                <div>
+                    <input type="radio" name="q4" value="false" onchange="checkAnswer(false)" id="f41"></input>
+                    <label for="f41">Texas</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="false" onchange="checkAnswer(false)" id="f42"></input>
+                    <label for="f42">Boston</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="false" onchange="checkAnswer(false)" id="f43"></input>
+                    <label for="f43">California</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="true" onchange="checkAnswer(true)" id="t4"></input>
+                    <label for="t1">New Orleans</label>
+                </div>
+            </div>
+            <div class="quiz-item">
+                <h3></h3>
+            </div>
+            <div class="quiz-item">
+                <h3></h3>
+            </div>
+            <div class="quiz-item">
+                <h3></h3>
+            </div>
+            <div class="quiz-item">
+                <h3></h3>
+            </div>
+            <div class="quiz-item">
+                <h3></h3>
+            </div>
+            <div class="quiz-item">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h5>All rights reserved to the rightful owner of this site: Idan Zaguri</h5>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

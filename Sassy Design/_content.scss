@@ -18,12 +18,13 @@ div {
 /*Main content box START*/
 .main {
     width: 75vw;
-    background-color: rgb(247, 247, 204);
+    background-color: beige;
     left: 0;
     right: 0;
     margin: 0 auto;
     padding-bottom: 20px;
     text-align: center;
+    padding-top: 20px;
 
     h2 {
         font-family: $fontHeaderB;
@@ -37,7 +38,8 @@ div {
 
 /*Footer START*/
 footer {
-    background-color: $buttonPurple;
+    color: white;
+    background-color: black;
     width: 75vw;
     height: 60px;
     margin: 0 auto;
@@ -48,6 +50,17 @@ footer {
 
         @include mobile {
             font-size: 1em;
+        }
+    }
+
+    #quizBTN {
+        background-color: $buttonPurple;
+        border-radius: 5px;
+        color: white;
+
+        #quizANC {
+            text-decoration: none;
+            color: white;
         }
     }
 }
@@ -84,23 +97,39 @@ nav {
                     border-radius: 12px;
                     width: 10vw;
                     text-align: center;
+                    font-family: $fontHeaderB;
 
                     &:nth-child(2n) {
                         background-color: $buttonGreen;
-                        font-family: $fontHeaderB;
+                        border-bottom: 4px solid lighten($buttonGreen, 20%);
 
                         &:active {
-                            background-color: lighten($buttonGreen, 10%);
+                            background-color: darken($buttonGreen, 10%);
                         }
                     }
 
                     &:nth-child(2n+1) {
                         background-color: $buttonYellow;
-                        font-family: $fontHeaderB;
+                        border-bottom: 4px solid lighten($buttonYellow, 20%);
 
                         &:active {
                             background-color: darken($buttonYellow, 10%);
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        div {
+            div {
+                display: block;
+
+                ul {
+                    li {
+                        width: 97vw;
+                        margin: 7px 5px;
                     }
                 }
             }
@@ -121,12 +150,35 @@ nav {
     width: 35vw;
     margin: 0 auto;
 
+    .carousel-inner {
+        .carousel-item {
+            height: 85vh;
+        }
+    }
+
     @include tablet {
         width: 50vw;
     }
 
     @include mobile {
         width: 60vw;
+    }
+}
+
+#respIMG {
+    margin: 0 auto;
+    padding-top: 3px;
+    display: none;
+    width: 74.5vw;
+}
+
+@include tablet {
+    .carousel {
+        display: none;
+    }
+
+    #respIMG {
+        display: block;
     }
 }
 
@@ -476,9 +528,9 @@ iframe {
     }
 }
 
-/*FAQ page specific elements END */
+/*FAQ page specific elements END*/
 
-/*Contact page specific elements START */
+/*Contact page specific elements START*/
 
 .contact {
     padding-top: 20px;
@@ -509,24 +561,25 @@ iframe {
 
             input {
                 background-color: lighten(rgb(247, 247, 204), 5%);
-                box-shadow: 0px 4px darken(rgb(247, 247, 204), 12%);
             }
 
-            #firstName {
+            #first {
                 border: 0;
                 border-bottom: $buttonPurple 4px solid;
                 border-radius: 5px;
                 width: 14vw;
                 height: 4vh;
                 margin-right: 10px;
+                padding-left: 4px;
             }
 
-            #lastName {
+            #last {
                 border: 0;
                 border-bottom: $buttonYellow 4px solid;
                 border-radius: 5px;
                 width: 14vw;
                 margin-right: 10px;
+                padding-left: 4px;
             }
 
             #email {
@@ -534,6 +587,7 @@ iframe {
                 border-bottom: $buttonGreen 4px solid;
                 border-radius: 5px;
                 width: 14vw;
+                padding-left: 4px;
             }
 
             #freeText {
@@ -542,14 +596,13 @@ iframe {
                 height: 25vh;
                 padding: 8px;
                 background-color: lighten(rgb(247, 247, 204), 5%);
-                box-shadow: 0px 4px darken(rgb(247, 247, 204), 12%);
             }
 
             button {
                 margin: 40px 0;
                 width: 14vw;
                 height: 5vh;
-                background-color: rgb(185, 7, 7);
+                background-color: #b90707;
                 color: white;
                 border: 0;
                 border-radius: 8px;
@@ -605,6 +658,31 @@ iframe {
             iframe {
                 width: 68vw;
             }
+        }
+    }
+}
+
+/* Quiz page specific elements START*/
+
+#quiz {
+    width: 70vw;
+    margin-top: 20px;
+    background-color: $buttonPurple;
+    border: 5px double $buttonYellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .quiz-item {
+        background-color: $buttonYellow;
+        width: 26vw;
+        margin: 25px auto;
+        border: 1px $buttonGreen solid;
+        border-radius: 5px;
+        text-align: left;
+        padding: 10px;
+
+        div {
+            margin-left: 10px;
         }
     }
 }
